@@ -1,0 +1,62 @@
+# Rank Card
+A cool rank card for your leveling system!
+## How to use
+#### Base URL 
+```js
+https://api.aggelos-007.xyz/rankcard
+```
+### Fields
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="required" label="Required">
+    - avatar
+        - Type: Image URL
+    - username 
+      - Type: String
+    - xp
+        - Type: Number
+    - maxxp
+        - Type: Number
+    - level
+        - Type: Number
+  </TabItem>
+  <TabItem value="optional" label="Optional">
+    - background 
+        - Type: Image URL
+    - blur 
+        - Type: Boolean
+    - xpcolor 
+        - Type: Hex
+    - fontcolor 
+        - Type: Hex
+    - bgcolor 
+        - Type: Hex
+    - border
+        - Type: Boolean
+:::note
+    The `xpcolor`, `fontcolor` & `bgcolor` fields should **not** contain **#**
+:::
+    </TabItem>
+</Tabs>
+### Preview
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow url="https://api.aggelos-007.xyz/rankcard?username=aggelos&xp=1&maxxp=10&level=1&avatar=assets/img/agg_full.png">
+  #### Only Required Fields
+  -- -
+  ![Preview](https://agg-api.vercel.app/rankcard?username=aggelos&xp=1&maxxp=10&level=1&avatar=assets/img/agg_full.png)
+</BrowserWindow>
+
+<BrowserWindow url="https://api.aggelos-007.xyz/rankcard?username=aggelos&xp=1&maxxp=10&level=1&avatar=assets/img/agg_full.png&background=https://cdn.discordapp.com/attachments/886990051542708224/1015586580494291034/wall.png">
+  #### Custom Background
+  -- -
+  ![Preview](https://agg-api.vercel.app/rankcard?username=aggelos&xp=1&maxxp=10&level=1&avatar=assets/img/agg_full.png&background=https://cdn.discordapp.com/attachments/886990051542708224/1015586580494291034/wall.png)
+</BrowserWindow>
+
+<BrowserWindow url="https://api.aggelos-007.xyz/rankcard?username=aggelos&blur=true&xp=1&maxxp=10&level=1&avatar=assets/img/agg_full.png&background=https://cdn.discordapp.com/attachments/1019281137689956413/1136615566023594034/back_1.png&fontcolor=442c5c">
+  #### Fully Customized
+  -- -
+  ![Preview](https://agg-api.vercel.app/rankcard?username=aggelos&blur=true&xp=1&maxxp=10&level=1&avatar=assets/img/agg_full.png&background=https://cdn.discordapp.com/attachments/1019281137689956413/1136615566023594034/back_1.png&fontcolor=442c5c)
+</BrowserWindow>

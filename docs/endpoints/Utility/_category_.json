@@ -1,0 +1,9 @@
+{
+    "label": "Utility",
+    "position": 1,
+    "collapsed": false,
+    "link": {
+      "type": "generated-index",
+      "description": "All utility endpoints and their info."
+    }
+}

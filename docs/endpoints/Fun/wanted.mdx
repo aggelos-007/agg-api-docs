@@ -1,0 +1,30 @@
+# Wanted
+Put someone into a wanted poster!
+## How to use
+#### Base URL 
+```js
+https://api.aggelos-007.xyz/wanted
+```
+### Fields
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="required" label="Required">
+    - avatar
+        - Type: Image URL
+  </TabItem>
+  <TabItem value="optional" label="Optional">
+    - dollars
+        - Type: Number
+:::note
+    The `dollars` field should **not** have **commas**
+:::
+    </TabItem>
+</Tabs>
+### Preview
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow url="https://api.aggelos-007.xyz/wanted?avatar=assets/img/agg_full.png">
+  ![Preview](https://agg-api.vercel.app/wanted?avatar=assets/img/agg_full.png)
+</BrowserWindow>

@@ -1,0 +1,32 @@
+# Hug
+Hug someone! They deserve it.
+## How to use
+#### Base URL 
+```js
+https://api.aggelos-007.xyz/hug
+```
+### Fields
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="required" label="Required">
+    - avatar1
+        - Type: Image URL
+    - avatar2
+        - Type: Image URL
+  </TabItem>
+    <TabItem value="optional" label="Optional">
+    - number
+        - Type: Number
+:::note
+    The `number` field should be between 0-100
+:::
+    </TabItem>
+</Tabs>
+### Preview
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow url="https://api.aggelos-007.xyz/hug?avatar1=assets/img/agg_full.png&avatar2=assets/img/agg_full.png">
+  ![Preview](https://agg-api.vercel.app/hug?avatar1=assets/img/agg_full.png&avatar2=assets/img/agg_full.png)
+</BrowserWindow>

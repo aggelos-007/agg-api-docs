@@ -1,0 +1,32 @@
+# Level Up Card
+A cool level up card for your leveling system!
+## How to use
+#### Base URL 
+```js
+https://api.aggelos-007.xyz/levelup
+```
+### Fields
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="required" label="Required">
+    - avatar
+        - Type: Image URL
+    - level
+      - Type: Number
+  </TabItem>
+  <TabItem value="optional" label="Optional">
+    - border
+        - Type: Hex
+:::note
+    The `border` field should **not** contain **#**
+:::
+    </TabItem>
+</Tabs>
+### Preview
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow url="https://api.aggelos-007.xyz/levelup?avatar=assets/img/agg_full.png&level=10">
+  ![Preview](https://agg-api.vercel.app/levelup?avatar=assets/img/agg_full.png&level=10)
+</BrowserWindow>

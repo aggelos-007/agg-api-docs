@@ -1,0 +1,9 @@
+{
+    "label": "Fun",
+    "position": 2,
+    "collapsed": false,
+    "link": {
+      "type": "generated-index",
+      "description": "All fun endpoints and their info."
+    }
+}

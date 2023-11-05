@@ -1,0 +1,25 @@
+# Boost Card
+A cool boost card for your boosters!
+## How to use
+#### Base URL 
+```js
+https://api.aggelos-007.xyz/boostcard
+```
+### Fields
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="required" label="Required">
+    - avatar
+        - Type: Image URL
+    - username
+      - Type: String
+  </TabItem>
+</Tabs>
+### Preview
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow url="https://api.aggelos-007.xyz/boostcard?avatar=assets/img/agg_full.png&username=aggelos007">
+  ![Preview](https://agg-api.vercel.app/boostcard?avatar=assets/img/agg_full.png&username=aggelos007)
+</BrowserWindow>
