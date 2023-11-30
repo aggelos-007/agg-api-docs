@@ -1,0 +1,54 @@
+# Rank Card
+A cool rank card for your leveling system!
+## How to use
+#### Base URL 
+```js
+https://api.aggelos-007.xyz/rankcard
+```
+### Fields
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="required" label="Required">
+    - avatar
+        - Type: Image URL
+  </TabItem>
+  <TabItem value="optional" label="Optional">
+    - text1
+        - Type: String
+    - text2
+        - Type: String
+    - text3
+        - Type: String
+    - background 
+        - Type: Image URL
+    - blur 
+        - Type: Boolean
+    - bgcolor 
+        - Type: Hex
+    - fontcolor
+        -  Type: Hex
+    - border
+        - Type: Boolean
+    - bordercolor
+        - Type: Hex
+:::note
+    The `fontcolor`, `bordercolor` & `bgcolor` fields should **not** contain **#**
+:::
+    </TabItem>
+</Tabs>
+### Preview
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow url="https://api.aggelos-007.xyz/welcomecard?text1=Aggelos&text2=Welcome+To+Agg-API&text3=Member+219&avatar=assets/img/agg_full.png">
+  #### Only Required Fields
+  -- -
+  ![Preview](https://agg-api.vercel.app/welcomecard?text1=Aggelos&text2=Welcome+To+Agg-API&text3=Member+219&avatar=assets/img/agg_full.png)
+</BrowserWindow>
+
+<BrowserWindow url="https://api.aggelos-007.xyz/welcomecard?background=https://cdn.discordapp.com/attachments/850808002545319957/859359637106065408/bg.png&text1=Aggelos&text2=Welcome+To+Agg-API&text3=Member+219&avatar=assets/img/agg_full.png">
+  #### Custom Background
+  -- -
+  ![Preview](https://agg-api.vercel.app/welcomecard?background=https://cdn.discordapp.com/attachments/850808002545319957/859359637106065408/bg.png&text1=Aggelos&text2=Welcome+To+Agg-API&text3=Member+219&avatar=assets/img/agg_full.png)
+</BrowserWindow>
